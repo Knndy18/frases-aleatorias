@@ -1,0 +1,252 @@
+/* Configuración básica */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f8cdda, #1fc8db);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos y texto */
+h1 {
+    color: #d81b60;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Encuesta */
+.survey select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.survey button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d81b60;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.survey button:hover {
+    background-color: #c2185b;
+}
+
+.dia button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #c2185b;
+    border: none;
+    border-radius: 15px;
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+/* Mensaje */
+.message-area {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #d81b60;
+    border-radius: 10px;
+    background-color: #ffe4e1;
+}
+
+#messageOutput {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Botón "Otro mensaje" */
+#newMessage {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newMessage:hover {
+    background-color: #1565c0;
+}
+
+/* Elementos ocultos */
+.hidden {
+    display: none;
+}
+
+/* Contenedor de Música Recomendada */
+.music-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.music-container h3 {
+    color: #d81b60;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.music-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.music-container ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.music-container ul li a {
+    color: #1e88e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.music-container ul li a:hover {
+    color: #1565c0;
+}
+
+/* Contenedor Poema para ti */
+.poema-container {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.poema-container h2 {
+    color: #d81b60;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.poema-container p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .music-container {
+        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .music-container h3 {
+        font-size: 1.6rem;
+    }
+
+    .music-container ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .survey select, .survey button, .dia button {
+        font-size: 0.9rem;
+    }
+
+    .message-area {
+        padding: 15px;
+    }
+
+    /* Poema debajo de la encuesta */
+    .poema-container {
+        position: relative;
+        width: 100%;
+        left: 0;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    /* Barra lateral se oculta en móviles */
+    .sidebar {
+        display: none;
+    }
+
+    /* Música recomendada debajo de todo */
+    .music-recommendation {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #e1f5fe;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .survey select, .survey button, .dia button {
+        font-size: 1rem;
+    }
+
+    .poema-container {
+        width: 250px;
+    }
+}

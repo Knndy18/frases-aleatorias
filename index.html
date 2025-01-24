@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web de Frases Aleatorias</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Bienvenida a Tu Página Especial 💕</h1>
+        <p>Selecciona cómo te sientes hoy y recibe un mensaje especial.</p>
+
+        <!-- Encuesta -->
+        <div class="survey">
+            <label for="emotionSelect">¿Cómo te sientes hoy?</label>
+            <select id="emotionSelect">
+                <option value="">Selecciona una emoción</option>
+                <option value="triste">Me siento triste</option>
+                <option value="feliz">Me siento feliz</option>
+                <option value="ansiosa">Me siento ansiosa</option>
+                <option value="enojada">Me siento enojada</option>
+            </select>
+            <button id="generateMessage">Generar mensaje</button>
+        </div>
+        
+        <div class="dia">
+            <button onclick="mensDia();" id="mensajeDia" value="mensajeDia">Frase del dia</button>
+        </div>
+        
+        <!-- Área de mensaje -->
+        <div class="message-area">
+            <p id="messageOutput"></p>
+            <button id="newMessage" class="hidden">Otro mensaje</button>
+        </div>
+        
+        <!-- Contenedor Poema para ti (Debajo de la encuesta) -->
+        <div class="poema-container">
+            <h2>Poema para ti</h2>
+            <p id="poema"></p> <!-- Aquí se insertará el poema -->
+        </div>
+    </div>
+
+    <!-- Contenedor para música recomendada -->
+    <div class="music-container">
+        <h3>Música recomendada</h3>
+        <ul>
+            <li><a href="#" target="_blank">cancion 1</a></li>
+            <li><a href="#" target="_blank">Canción 2</a></li>
+            <li><a href="#" target="_blank">Canción 3</a></li>
+        </ul>
+    </div>
+
+    <script src="/script/app.js"></script>
+</body>
+</html>
